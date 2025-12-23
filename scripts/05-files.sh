@@ -136,12 +136,39 @@ restore_personal_files() {
 
 choose_theme() {
     local THEME_SCRIPT="$HOME/.config/i3/rofi/themes2"
+    local FALLBACK_SCRIPT="$HOME/.config/i3/themes/catppuccin/apply.sh"
+    local LOG_FILE="$HOME/.config/theme_restore_errors.log"
 
     echo -e "\n==> ${BLUE}Executando seletor de tema...${NC}"
 
+    # Detectar se está rodando sem interface gráfica
+    if [ -z "$XDG_CURRENT_DESKTOP" ] && [ -z "$DESKTOP_SESSION" ]; then
+        echo -e "${YELLOW}Nenhuma interface gráfica detectada.${NC}"
+        if [ -x "$FALLBACK_SCRIPT" ]; then
+            "$FALLBACK_SCRIPT" 2>>"$LOG_FILE"
+            echo -e "${GREEN}Tema Catppuccin aplicado (modo sem interface).${NC}"
+        else
+            echo -e "${RED}Erro:${NC} fallback $FALLBACK_SCRIPT não encontrado ou não executável."
+        fi
+        return
+    fi
+
+    # Detectar se está rodando i3wm
+    if pgrep -x i3 >/dev/null 2>&1; then
+        echo -e "${YELLOW}Detectado i3wm.${NC}"
+        if [ -x "$FALLBACK_SCRIPT" ]; then
+            "$FALLBACK_SCRIPT" 2>>"$LOG_FILE"
+            echo -e "${GREEN}Tema Catppuccin aplicado (i3wm).${NC}"
+        else
+            echo -e "${RED}Erro:${NC} fallback $FALLBACK_SCRIPT não encontrado ou não executável."
+        fi
+        return
+    fi
+
+    # Caso esteja em outro ambiente gráfico (GNOME, XFCE, KDE etc.)
     if [ -x "$THEME_SCRIPT" ]; then
-        "$THEME_SCRIPT"
-        echo -e "${GREEN}Tema aplicado com sucesso!${NC}"
+        "$THEME_SCRIPT" 2>>"$LOG_FILE"
+        echo -e "${GREEN}Seletor de tema aberto com sucesso!${NC}"
     else
         echo -e "${RED}Erro:${NC} o arquivo $THEME_SCRIPT não existe ou não é executável."
         echo -e "Verifique se o caminho está correto e se tem permissão de execução (chmod +x)."
