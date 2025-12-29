@@ -65,10 +65,10 @@ debian-i3wm/
 Clone o repositório e execute o script de instalação:
 
 ```bash
-git clone https://github.com/thespation/debian-i3wm.git
+git clone https://github.com/thespation/debian-i3wm
 cd debian-i3wm/scripts
 chmod +x *.sh
-./install.sh
+./00-instalar.sh
 ```
 
 ## 📚 Referências
