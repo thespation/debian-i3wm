@@ -8,7 +8,7 @@ Este repositório reúne configurações e scripts criados para instalar o **i3w
 A proposta é oferecer um ambiente minimalista, funcional e bonito, com automações que facilitem o dia a dia.
 
 <details>
-  <summary><b>📸 Clique para ver a o que foi selecionado na instalação mínima</b></summary>
+  <summary><b> Clique para ver o que foi selecionado na instalação mínima</b></summary>
   <br>
   <div align="center" style="margin-top:10px; margin-bottom:10px;">
     <img src="https://github.com/user-attachments/assets/4de36882-52ff-433f-a5dc-7c52a39fff62" alt="DebianMinimal" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;" />
@@ -16,6 +16,17 @@ A proposta é oferecer um ambiente minimalista, funcional e bonito, com automaç
   </div>
 </details>
 
+## 🎨 Telas
+Seletor de temas:
+
+<img width="1920" height="1080" alt="Screenshot_2025-12-28-21-27-56" src="https://github.com/user-attachments/assets/1f5ae30c-2825-4156-8ebc-95f02349de76" />
+
+### Cores
+![themes](https://github.com/user-attachments/assets/bd1b4f52-96e6-4d74-b9fe-99db64035476)
+
+### Temas disponíveis
+
+![themes](https://github.com/user-attachments/assets/eb4619c7-1cba-42f1-930c-9a2cb63b4cd3)
 
 
 ## 📂 Estrutura do Repositório
@@ -58,3 +69,12 @@ git clone https://github.com/thespation/debian-i3wm.git
 cd debian-i3wm/scripts
 chmod +x *.sh
 ./install.sh
+```
+
+## 📚 Referências
+
+Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
+
+- [gh0stzk/dotfiles](https://github.com/gh0stzk/dotfiles) → inspiração geral e uso dos arquivos `zsh`
+- [Aditya Shakya (adi1090x)](https://github.com/adi1090x) → scripts utilizados para temas, ícones, rofi, dunst e automações.
+
