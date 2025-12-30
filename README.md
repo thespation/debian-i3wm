@@ -182,5 +182,5 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
 - Arquivo 20-bindings.conf
   - Corrigido o atalho para `troca_config_verificacao.sh`
   - Removido atalho para selecionar papel de parede via `pywal` (i3setWallpaper.sh)
-
+- Arquivo `.zshrc`configurador para abrir com comando `random`, para usar `asciiart` aleatório.
 </details>
