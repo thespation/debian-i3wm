@@ -78,3 +78,109 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
 - [gh0stzk/dotfiles](https://github.com/gh0stzk/dotfiles) → inspiração geral e uso dos arquivos `zsh`
 - [Aditya Shakya (adi1090x)](https://github.com/adi1090x) → scripts utilizados para temas, ícones, rofi, dunst e automações.
 
+## 📒 [Registro de alterações e Backups](#registro-de-alterações-e-backups)
+
+<details>
+  <summary><b>Clique para expandir a evolução de cada versão</b></summary>
+  <br>
+
+## backup-2025-12-13_20-00-08
+
+### Rofi
+- Tema do rofi sem o extra em branco
+- Passado para 2 colunas
+- Seletor de tema e ícones em 2 colunas
+
+---
+
+## backup-2025-12-14_22-27-20
+
+### Temas
+- Acrescentado o `theme2` com pré-visualização
+
+### Polybar
+- Módulo configurado para abrir com clique esquerdo
+
+---
+
+## backup-2025-12-15_14-06-31
+
+### Polybar
+- Removido include do `config.ini` para os arquivos abaixo
+- Removidos os arquivos:
+  - `bars.ini`
+  - `decor.ini`
+  - `preview.ini`
+
+---
+
+## backup-2025-12-15_16-15-04
+
+### Temas
+- Acrescentados módulos em blocos para o tema **Catppuccin**
+- Reformulados todos os outros módulos para mostrar corretamente o ícone
+
+### Scripts
+- Modificado `update` para mostrar o ícone no bloco
+
+---
+
+## backup-2025-12-15_23-24-23
+
+### Polybar
+- Ajustado o módulo de temperatura
+
+### Scripts
+- Reescrito o script para **bluetooth**
+
+### Temas
+- Alterado modo blocos para **Gruvbox-light**
+
+---
+
+## backup-2025-12-16_10-50-11
+
+### Bugs
+- Corrigido e testado módulo de temperatura e bateria no notebook
+
+---
+
+## backup-2025-12-17_11-41-46
+
+### Rofi
+- Configurado para buscar o tema do arquivo `.current`
+- Removido o bloco rofi do `apply.sh`
+
+### Temas
+- Acrescentado banner em `theme2`
+- Removido o script `troca_config_verificacao.sh` de cada tema
+- Removidos arquivos `.rasi` (askpass, confirm, music, networkmenu, runner) de cada tema
+
+### Scripts
+- Acrescentado banner em `nightlight.sh`
+- Acrescentado banner em `bluetooth.sh`
+
+---
+
+## backup-2025-12-21_22-20-25
+
+### Polybar
+- Módulo `update` configurado para ser mostrado apenas quando houver atualização
+
+---
+
+## backup-2025-12-28_21-32-47
+
+### Temas
+- Acrescentado módulo de bluetooth para o tema **Everforest**
+
+---
+
+## backup-2025-12-30_18-45-44
+
+### Config
+- Arquivo 20-bindings.conf
+  - Corrigido o atalho para `troca_config_verificacao.sh`
+  - Removido atalho para selecionar papel de parede via `pywal` (i3setWallpaper.sh)
+
+</details>
