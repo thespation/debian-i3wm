@@ -84,28 +84,28 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
   <summary><b>Clique para expandir a evolução de cada versão</b></summary>
   <br>
 
-## backup-2025-12-13_20-00-08
+### backup-2025-12-13_20-00-08
 
-### Rofi
+#### Rofi
 - Tema do rofi sem o extra em branco
 - Passado para 2 colunas
 - Seletor de tema e ícones em 2 colunas
 
 ---
 
-## backup-2025-12-14_22-27-20
+### backup-2025-12-14_22-27-20
 
-### Temas
+#### Temas
 - Acrescentado o `theme2` com pré-visualização
 
-### Polybar
+#### Polybar
 - Módulo configurado para abrir com clique esquerdo
 
 ---
 
-## backup-2025-12-15_14-06-31
+### backup-2025-12-15_14-06-31
 
-### Polybar
+#### Polybar
 - Removido include do `config.ini` para os arquivos abaixo
 - Removidos os arquivos:
   - `bars.ini`
@@ -116,69 +116,69 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
 
 ## backup-2025-12-15_16-15-04
 
-### Temas
+#### Temas
 - Acrescentados módulos em blocos para o tema **Catppuccin**
 - Reformulados todos os outros módulos para mostrar corretamente o ícone
 
-### Scripts
+#### Scripts
 - Modificado `update` para mostrar o ícone no bloco
 
 ---
 
-## backup-2025-12-15_23-24-23
+### backup-2025-12-15_23-24-23
 
-### Polybar
+#### Polybar
 - Ajustado o módulo de temperatura
 
-### Scripts
+#### Scripts
 - Reescrito o script para **bluetooth**
 
-### Temas
+#### Temas
 - Alterado modo blocos para **Gruvbox-light**
 
 ---
 
-## backup-2025-12-16_10-50-11
+### backup-2025-12-16_10-50-11
 
-### Bugs
+#### Bugs
 - Corrigido e testado módulo de temperatura e bateria no notebook
 
 ---
 
-## backup-2025-12-17_11-41-46
+### backup-2025-12-17_11-41-46
 
-### Rofi
+#### Rofi
 - Configurado para buscar o tema do arquivo `.current`
 - Removido o bloco rofi do `apply.sh`
 
-### Temas
+#### Temas
 - Acrescentado banner em `theme2`
 - Removido o script `troca_config_verificacao.sh` de cada tema
 - Removidos arquivos `.rasi` (askpass, confirm, music, networkmenu, runner) de cada tema
 
-### Scripts
+#### Scripts
 - Acrescentado banner em `nightlight.sh`
 - Acrescentado banner em `bluetooth.sh`
 
 ---
 
-## backup-2025-12-21_22-20-25
+### backup-2025-12-21_22-20-25
 
-### Polybar
+#### Polybar
 - Módulo `update` configurado para ser mostrado apenas quando houver atualização
 
 ---
 
-## backup-2025-12-28_21-32-47
+### backup-2025-12-28_21-32-47
 
-### Temas
+#### Temas
 - Acrescentado módulo de bluetooth para o tema **Everforest**
 
 ---
 
-## backup-2025-12-30_18-45-44
+### backup-2025-12-30_18-45-44
 
-### Config
+#### Config
 - Arquivo 20-bindings.conf
   - Corrigido o atalho para `troca_config_verificacao.sh`
   - Removido atalho para selecionar papel de parede via `pywal` (i3setWallpaper.sh)
