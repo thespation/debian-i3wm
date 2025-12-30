@@ -6,7 +6,7 @@
 RESET="\e[0m"
 VERDE="\e[32m"
 AMARELO="\e[33m"
-AZUL="\e[34m"
+AZUL="\e[94m"
 CYAN="\e[36m"
 VERMELHO="\e[31m"
 
