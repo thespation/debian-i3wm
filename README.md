@@ -19,7 +19,8 @@ A proposta é oferecer um ambiente minimalista, funcional e bonito, com automaç
 ## 🎨 Telas
 Seletor de temas:
 
-<img width="1920" height="1080" alt="Screenshot_2025-12-28-21-27-56" src="https://github.com/user-attachments/assets/1f5ae30c-2825-4156-8ebc-95f02349de76" />
+<img width="1920" height="1080" alt="Screenshot_2026-01-01-22-34-37" src="https://github.com/user-attachments/assets/1400fac4-e0af-4cd1-accb-8efa42777b30" />
+
 
 ### Cores
 ![themes](https://github.com/user-attachments/assets/bd1b4f52-96e6-4d74-b9fe-99db64035476)
@@ -189,4 +190,12 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
 ## backup-2025-12-31_10-38-04
 ### Scripts
 - Corrigido comando em `nightlight.sh` (mostrava erro na saída ao executar diretamente no terminal)
+
+---
+
+## backup-2026-01-01_22-24-30
+### Rofi
+- Melhorada a forma de gerar miniatura de cada tema
+  - Reescrito o arquivo `theme2`
+  - Geradas novas pré-visualizações dos temas 
 </details>
