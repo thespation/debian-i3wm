@@ -71,6 +71,126 @@ cd debian-i3wm/scripts
 chmod +x *.sh
 ./00-instalar.sh
 ```
+## ⌨️ Atalhos de Teclado
+
+<details>
+  <summary><b> Clique aqui para ver os atalhos de teclado </b></summary>
+
+### 🖥️ Terminal
+| Atalho | Ação |
+|--------|------|
+| `$mod+Return` | Abrir Alacritty |
+| `$mod+Shift+Return` | Abrir terminal flutuante via script |
+
+---
+
+### 📂 Aplicativos
+| Atalho | Ação |
+|--------|------|
+| `$mod+e` | Abrir Thunar (gerenciador de arquivos) |
+| `$mod+Shift+e` | Abrir Geany (editor de texto) |
+| `$alt+Ctrl+h` | Abrir htop no Alacritty |
+
+---
+
+### ⚙️ Configuração
+| Atalho | Ação |
+|--------|------|
+| `$alt+Ctrl+n` | Trocar configuração da polybar (exibe ícones ou números) |
+
+---
+
+### 🚀 Rofi
+| Atalho | Ação |
+|--------|------|
+| `$alt+F1` / `$mod+d` | Launcher |
+| `$mod+x` | Powermenu |
+| `$mod+s` | Screenshot |
+| `$mod+r` | Abrir como root |
+| `$mod+w` | Gerenciar janelas |
+| `$mod+b` | Bluetooth |
+| `$mod+Alt+n` | Trocar tema |
+| `$mod+t` | Seletor de temas |
+
+---
+
+### 🪟 Funções do i3
+| Atalho | Ação |
+|--------|------|
+| `$mod+q` | Fechar janela |
+| `$mod+c` | Fechar janela |
+| `$mod+Shift+c` | Recarregar configuração |
+| `$mod+space` | Alternar entre tiling/flutuante |
+| `$mod+f` | Alternar fullscreen |
+| `$alt+Ctrl+l` | Bloquear tela (i3lock) |
+
+---
+
+### 🔊 Áudio
+| Atalho | Ação |
+|--------|------|
+| `XF86AudioRaiseVolume` | Aumentar volume (+5) |
+| `XF86AudioLowerVolume` | Diminuir volume (-5) |
+| `XF86AudioMute` | Mutar áudio |
+
+---
+
+### 🎯 Navegação e Movimento
+| Atalho | Ação |
+|--------|------|
+| `$mod+Left` | Foco para esquerda |
+| `$mod+Down` | Foco para baixo |
+| `$mod+Up` | Foco para cima |
+| `$mod+Right` | Foco para direita |
+| `$mod+Shift+Left` | Mover janela para esquerda |
+| `$mod+Shift+Down` | Mover janela para baixo |
+| `$mod+Shift+Up` | Mover janela para cima |
+| `$mod+Shift+Right` | Mover janela para direita |
+
+---
+
+### 🛠️ Modos Especiais
+
+#### 🔧 Resize Mode
+| Atalho | Ação |
+|--------|------|
+| `$mod+Shift+r` | Entrar no modo Resize |
+| `h / Left` | Diminuir largura |
+| `l / Right` | Aumentar largura |
+| `j / Down` | Aumentar altura |
+| `k / Up` | Diminuir altura |
+| `Return / Escape / $mod+Shift+r` | Sair do modo Resize |
+
+---
+
+#### 📦 Move Mode
+| Atalho | Ação |
+|--------|------|
+| `$mod+Shift+m` | Entrar no modo Move |
+| `h / Left` | Mover janela para esquerda |
+| `l / Right` | Mover janela para direita |
+| `j / Down` | Mover janela para baixo |
+| `k / Up` | Mover janela para cima |
+| `Return / Escape / $mod+Shift+m` | Sair do modo Move |
+
+---
+
+#### 🎨 Gaps Mode
+| Atalho | Ação |
+|--------|------|
+| `$mod+Shift+g` | Entrar no modo Gaps |
+| `+ / = / KP_Add` | Aumentar gaps internos |
+| `- / KP_Subtract` | Diminuir gaps internos |
+| `Shift+plus / Shift+equal` | Aumentar gaps externos |
+| `Shift+minus` | Diminuir gaps externos |
+| `r` | Resetar gaps (internos e externos) |
+| `t` | Alternar gaps |
+| `i` | Definir gaps internos = 10 |
+| `o` | Definir gaps externos = 10 |
+| `Return / Escape / $mod+Shift+g` | Sair do modo Gaps |
+
+</details>
+
 
 ## 📚 Referências
 
@@ -78,124 +198,3 @@ Este projeto foi inspirado e utiliza recursos de outros trabalhos incríveis:
 
 - [gh0stzk/dotfiles](https://github.com/gh0stzk/dotfiles) → inspiração geral e uso dos arquivos `zsh`
 - [Aditya Shakya (adi1090x)](https://github.com/adi1090x) → scripts utilizados para temas, ícones, rofi, dunst e automações.
-
-## 📒 [Registro de alterações e Backups](#registro-de-alterações-e-backups)
-
-<details>
-  <summary><b>Clique para expandir a evolução de cada versão</b></summary>
-  <br>
-
-### backup-2025-12-13_20-00-08
-
-#### Rofi
-- Tema do rofi sem o extra em branco
-- Passado para 2 colunas
-- Seletor de tema e ícones em 2 colunas
-
----
-
-### backup-2025-12-14_22-27-20
-
-#### Temas
-- Acrescentado o `theme2` com pré-visualização
-
-#### Polybar
-- Módulo configurado para abrir com clique esquerdo
-
----
-
-### backup-2025-12-15_14-06-31
-
-#### Polybar
-- Removido include do `config.ini` para os arquivos abaixo
-- Removidos os arquivos:
-  - `bars.ini`
-  - `decor.ini`
-  - `preview.ini`
-
----
-
-## backup-2025-12-15_16-15-04
-
-#### Temas
-- Acrescentados módulos em blocos para o tema **Catppuccin**
-- Reformulados todos os outros módulos para mostrar corretamente o ícone
-
-#### Scripts
-- Modificado `update` para mostrar o ícone no bloco
-
----
-
-### backup-2025-12-15_23-24-23
-
-#### Polybar
-- Ajustado o módulo de temperatura
-
-#### Scripts
-- Reescrito o script para **bluetooth**
-
-#### Temas
-- Alterado modo blocos para **Gruvbox-light**
-
----
-
-### backup-2025-12-16_10-50-11
-
-#### Bugs
-- Corrigido e testado módulo de temperatura e bateria no notebook
-
----
-
-### backup-2025-12-17_11-41-46
-
-#### Rofi
-- Configurado para buscar o tema do arquivo `.current`
-- Removido o bloco rofi do `apply.sh`
-
-#### Temas
-- Acrescentado banner em `theme2`
-- Removido o script `troca_config_verificacao.sh` de cada tema
-- Removidos arquivos `.rasi` (askpass, confirm, music, networkmenu, runner) de cada tema
-
-#### Scripts
-- Acrescentado banner em `nightlight.sh`
-- Acrescentado banner em `bluetooth.sh`
-
----
-
-### backup-2025-12-21_22-20-25
-
-#### Polybar
-- Módulo `update` configurado para ser mostrado apenas quando houver atualização
-
----
-
-### backup-2025-12-28_21-32-47
-
-#### Temas
-- Acrescentado módulo de bluetooth para o tema **Everforest**
-
----
-
-### backup-2025-12-30_18-45-44
-
-#### Config
-- Arquivo 20-bindings.conf
-  - Corrigido o atalho para `troca_config_verificacao.sh`
-  - Removido atalho para selecionar papel de parede via `pywal` (i3setWallpaper.sh)
-- Arquivo `.zshrc`configurador para abrir com comando `random`, para usar `asciiart` aleatório.
-
----
-
-## backup-2025-12-31_10-38-04
-### Scripts
-- Corrigido comando em `nightlight.sh` (mostrava erro na saída ao executar diretamente no terminal)
-
----
-
-## backup-2026-01-01_22-24-30
-### Rofi
-- Melhorada a forma de gerar miniatura de cada tema
-  - Reescrito o arquivo `theme2`
-  - Geradas novas pré-visualizações dos temas 
-</details>
