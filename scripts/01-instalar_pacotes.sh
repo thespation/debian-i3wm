@@ -14,6 +14,9 @@ YELLOW='\033[0;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+# Lista de gestores de login conhecidos (agora inclui Ly também)
+GESTORES=("lightdm" "gdm3" "sddm" "xdm" "lxdm" "ly")
+
 # Spinner (modelo Arch)
 spinner() {
   local pid=$!
@@ -46,24 +49,44 @@ verifica_arquivo() {
     fi
 }
 
+# Função para verificar se já existe algum gestor de login instalado
+tem_gestor_instalado() {
+    for g in "${GESTORES[@]}"; do
+        if dpkg -s "$g" &>/dev/null; then
+            GESTOR_INSTALADO="$g"
+            return 0
+        fi
+    done
+    return 1
+}
+
 instala_pacote() {
     local pkg=$1
+
+    # Se o pacote for um gestor de login, verificar se já existe outro
+    if [[ " ${GESTORES[@]} " =~ " $pkg " ]]; then
+        if tem_gestor_instalado; then
+            local gestor="$GESTOR_INSTALADO"
+            if [[ "$gestor" != "$pkg" ]]; then
+                echo -e "[${YELLOW}↷${NC}] $pkg pulado (já existe $gestor instalado)"
+                echo "$pkg" >> "$LOG_PULADOS.tmp"
+                return
+            fi
+        fi
+    fi
+
     if dpkg -s "$pkg" &>/dev/null; then
-        # já instalado → tick verde, nome sem cor
         echo -e "[${GREEN}✔${NC}] $pkg já está instalado."
         echo "$pkg" >> "$LOG_PULADOS.tmp"
     else
-        # 🔹 quebra de linha ANTES de iniciar instalação
         echo
         echo -e "Instalando $pkg..."
         sudo apt install -y "$pkg" &>/dev/null &
         spinner
         if dpkg -s "$pkg" &>/dev/null; then
-            # tick verde + nome em verde
             echo -e "[${GREEN}✔${NC}] ${GREEN}$pkg${NC} instalado"
             echo "$pkg" >> "$LOG_INSTALADOS.tmp"
         else
-            # X vermelho + nome em vermelho
             echo -e "[${RED}✘${NC}] ${RED}$pkg${NC} Erro ao instalar"
             echo "$pkg" >> "$LOG_ERROS.tmp"
         fi
