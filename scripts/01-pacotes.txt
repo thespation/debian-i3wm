@@ -29,6 +29,7 @@ nano
 network-manager
 network-manager-gnome
 pamixer
+picom
 pipewire-audio
 pipewire-pulse
 pkexec
