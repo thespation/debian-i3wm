@@ -19,7 +19,7 @@ A proposta é oferecer um ambiente minimalista, funcional e bonito, com automaç
 ## 🎨 Telas
 Seletor de temas:
 
-<img width="1920" height="1080" alt="Screenshot_2026-01-01-22-34-37" src="https://github.com/user-attachments/assets/1400fac4-e0af-4cd1-accb-8efa42777b30" />
+<img width="1920" height="1080" alt="Screenshot_2026-01-09-12-02-57" src="https://github.com/user-attachments/assets/0219a0af-9254-4921-9481-d8916a53d647" />
 
 
 ### Cores
@@ -47,7 +47,7 @@ debian-i3wm/
 │   └── extras/                        # Scripts extras e utilitários (precisam ser executados manualmente)
 │       ├── 00-GerarVersionamento.sh   # Geração de versionamento automático
 │       └── ativar-tap(leptop).sh      # Ativação do touchpad em laptops
-└── backup-2025-12-21_22-20-25.zip     # Arquivo de backup gerado automaticamente (arquivos que serão utilizados pelo 05-files.sh)
+└── backup-AAAA-MM-DD_HH-MM-SS.zip     # Arquivo de backup gerado automaticamente (arquivos que serão utilizados pelo 05-files.sh)
 ```
 
 ## 🚀 Recursos
