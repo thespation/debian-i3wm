@@ -26,7 +26,7 @@ elif [ ${#BACKUP_FILES[@]} -eq 1 ]; then
     BACKUP_SELECTED="${BACKUP_FILES[0]}"
     echo -e "${GREEN}Backup encontrado:${NC} $BACKUP_SELECTED"
 else
-    echo -e "${YELLOW}Foram encontrados vários backups:${NC}"
+    echo -e "${YELLOW}Foi encontrado mais de um backups:${NC}"
     i=1
     for file in "${BACKUP_FILES[@]}"; do
         echo "  $i) $(basename "$file")"
