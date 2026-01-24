@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 # Definição de cores
 RED='\033[0;31m'
@@ -88,9 +88,8 @@ while true; do
 
             wait $ZIP_PID
             if [ -f "$ARCHIVE" ]; then
-                HUMAN_SIZE=$(du -h "$ARCHIVE" | awk '{print $1}')
                 printf "\r${GREEN}Backup compactado em:${RESET} $ARCHIVE\n"
-                echo -e "${CYAN}Tamanho do arquivo:${RESET} $HUMAN_SIZE"
+                echo -e "${CYAN}Tamanho do arquivo ZIP:${RESET} $(du -sh "$ARCHIVE" 2>/dev/null | awk '{print $1}')\n"
             else
                 printf "\r${RED}Erro: arquivo ZIP não foi criado!${RESET}\n"
             fi
