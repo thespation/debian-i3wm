@@ -5,6 +5,7 @@ bat
 bluez
 blueman
 catfish
+cliphist
 curl
 dconf-cli
 dunst
@@ -46,6 +47,7 @@ wireplumber
 xclip
 xdotool
 xorg
+xclip
 xfce4-power-manager
 xfce4-settings
 zip
