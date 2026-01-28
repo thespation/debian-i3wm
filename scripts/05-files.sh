@@ -175,9 +175,20 @@ choose_theme() {
     fi
 }
 
+handle_thunar_plugin() {
+    local PLUGIN_PATH="/usr/lib/x86_64-linux-gnu/thunarx-3/thunar-wallpaper-plugin.so"
+    local BACKUP_PATH="${PLUGIN_PATH}.bak"
+
+    if [ -f "$PLUGIN_PATH" ]; then
+        echo -e "\n==> ${BLUE}Removendo entrada duplicada de wallpaper do Thunar...${NC}"
+        sudo mv "$PLUGIN_PATH" "$BACKUP_PATH"
+        echo -e "${GREEN}Backup criado:${NC} $BACKUP_PATH"
+    fi
+}
 restore_config_folders
 restore_personal_files
 choose_theme
+handle_thunar_plugin
 
 echo -e "\n${GREEN}Instalação/restauração concluída!${NC}"
 echo -e "Backups substituídos estão em: ${BLUE}$GLOBAL_BACKUP${NC}"
