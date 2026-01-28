@@ -15,7 +15,7 @@ NC='\033[0m'
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PARENT_DIR="$SCRIPT_DIR/../"
 
-echo -e "${BLUE}Procurando arquivos de backup no diretório superior...${NC}"
+echo -e "${BLUE}Procurando arquivos de backup...${NC}"
 
 mapfile -t BACKUP_FILES < <(find "$PARENT_DIR" -maxdepth 1 -type f -name "backup-*.zip")
 
@@ -26,7 +26,7 @@ elif [ ${#BACKUP_FILES[@]} -eq 1 ]; then
     BACKUP_SELECTED="${BACKUP_FILES[0]}"
     echo -e "${GREEN}Backup encontrado:${NC} $BACKUP_SELECTED"
 else
-    echo -e "${YELLOW}Foi encontrado mais de um backups:${NC}"
+    echo -e "${YELLOW}Foi encontrado mais de um backup:${NC}"
     i=1
     for file in "${BACKUP_FILES[@]}"; do
         echo "  $i) $(basename "$file")"
@@ -45,7 +45,7 @@ else
 fi
 
 # =======================================
-# Descompactação real do seu caso
+# Descompactação do arquivo de backup
 # =======================================
 TMP_RESTORE_DIR="$SCRIPT_DIR/restaurar_tmp"
 
@@ -56,7 +56,7 @@ echo -e "\n${BLUE}Descompactando backup...${NC}"
 unzip -q "$BACKUP_SELECTED" -d "$TMP_RESTORE_DIR"
 
 # ---------------------------------------
-# Procurar a pasta raiz real do backup
+# Acessando pasta do backup
 # ---------------------------------------
 ROOT_DIR=$(find "$TMP_RESTORE_DIR" -mindepth 1 -maxdepth 1 -type d | head -n 1)
 
@@ -131,6 +131,16 @@ restore_personal_files() {
         mkdir -p "$HOME/.local/share"
         cp -r "$FILES_DIR/asciiart" "$HOME/.local/share/asciiart"
         echo -e "${GREEN}Restaurado:${NC} ~/.local/share/asciiart"
+    fi
+
+    # --- Plugin do Thunar ---
+    local PLUGIN_PATH="/usr/lib/x86_64-linux-gnu/thunarx-3/thunar-wallpaper-plugin.so"
+    local BACKUP_PATH="${PLUGIN_PATH}.bak"
+
+    if [ -f "$PLUGIN_PATH" ]; then
+        echo -e "\n==> ${BLUE}Removendo entrada duplicada de wallpaper do Thunar...${NC}"
+        sudo mv "$PLUGIN_PATH" "$BACKUP_PATH"
+        echo -e "${GREEN}Backup criado em:${NC} $BACKUP_PATH"
     fi
 }
 
