@@ -1,4 +1,23 @@
+
+
+<p align="center">
+  <img src="https://img.shields.io/github/downloads/thespation/debian-i3wm/total?color=88C0D0&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/stars/thespation/debian-i3wm?color=5E81AC&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/forks/thespation/debian-i3wm?color=A3BE8C&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/issues/thespation/debian-i3wm?color=4C566A&style=for-the-badge&logo=github" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/thespation/debian-i3wm?color=D8DEE9&style=for-the-badge&logo=gnu" />
+  <img src="https://img.shields.io/github/last-commit/thespation/debian-i3wm?color=88C0D0&style=for-the-badge&logo=git" />
+  <img src="https://img.shields.io/github/repo-size/thespation/debian-i3wm?color=5E81AC&style=for-the-badge&logo=files" />
+</p>
+
 # Debian i3wm
+Personalização para Debian utilizando **i3wm**, com integração de **polybar**, **rofi**, **dunst** e scripts automatizados para melhorar a experiência de uso.
+
+
+
 
 Personalização para Debian utilizando **i3wm**, com integração de **polybar**, **rofi**, **dunst** e scripts automatizados para melhorar a experiência de uso.
 
