@@ -1,7 +1,15 @@
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0219a0af-9254-4921-9481-d8916a53d647" alt="Debian i3wm Desktop" />
+  <br>
+  <sub>Seletor de temas</sub>
+</p>
+
+
+---
 
 <p align="center">
-  <img src="https://img.shields.io/github/downloads/thespation/debian-i3wm/total?color=88C0D0&style=for-the-badge&logo=github" />
+  <!-- <img src="https://img.shields.io/github/downloads/thespation/debian-i3wm/total?color=88C0D0&style=for-the-badge&logo=github" /> -->
   <img src="https://img.shields.io/github/stars/thespation/debian-i3wm?color=5E81AC&style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/github/forks/thespation/debian-i3wm?color=A3BE8C&style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/github/issues/thespation/debian-i3wm?color=4C566A&style=for-the-badge&logo=github" />
@@ -14,11 +22,6 @@
 </p>
 
 # Debian i3wm
-Personalização para Debian utilizando **i3wm**, com integração de **polybar**, **rofi**, **dunst** e scripts automatizados para melhorar a experiência de uso.
-
-
-
-
 Personalização para Debian utilizando **i3wm**, com integração de **polybar**, **rofi**, **dunst** e scripts automatizados para melhorar a experiência de uso.
 
 ## 📖 Sobre o Projeto
@@ -36,13 +39,16 @@ A proposta é oferecer um ambiente minimalista, funcional e bonito, com automaç
 </details>
 
 ## 🎨 Telas
-Seletor de temas:
-
-<img width="1920" height="1080" alt="Screenshot_2026-01-09-12-02-57" src="https://github.com/user-attachments/assets/0219a0af-9254-4921-9481-d8916a53d647" />
-
 
 ### Cores
-![themes](https://github.com/user-attachments/assets/bd1b4f52-96e6-4d74-b9fe-99db64035476)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd1b4f52-96e6-4d74-b9fe-99db64035476" alt="Themes" />
+  <br>
+  <sub>Cores disponíveis</sub>
+</p>
+
+
 
 ### Temas disponíveis
 
