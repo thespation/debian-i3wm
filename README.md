@@ -18,7 +18,8 @@
 <p align="center">
   <img src="https://img.shields.io/github/license/thespation/debian-i3wm?color=D8DEE9&style=for-the-badge&logo=gnu" />
   <img src="https://img.shields.io/github/last-commit/thespation/debian-i3wm?color=88C0D0&style=for-the-badge&logo=git" />
-  <img src="https://img.shields.io/github/repo-size/thespation/debian-i3wm?color=5E81AC&style=for-the-badge&logo=files" />
+  <img src="https://img.shields.io/badge/size-25MB-5E81AC?style=for-the-badge&logo=files"
+
 </p>
 
 # Debian i3wm
