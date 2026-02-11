@@ -1,3 +1,6 @@
+<p align="center">
+  <a href="README.en.md">🇬🇧 Mudar para inglês</a>
+</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0219a0af-9254-4921-9481-d8916a53d647" alt="Debian i3wm Desktop" />
