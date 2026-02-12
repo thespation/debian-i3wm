@@ -224,4 +224,8 @@ chmod +x *.sh
 
 ## 📚 References
 
-This project was inspired by and uses resources from other
+This project was inspired by and makes use of resources from other amazing works:
+
+- [gh0stzk/dotfiles](https://github.com/gh0stzk/dotfiles) → general inspiration and use of `zsh` files  
+- [Aditya Shakya (adi1090x)](https://github.com/adi1090x) → scripts used for themes, icons, rofi, dunst, and automations
+
