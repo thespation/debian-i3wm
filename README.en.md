@@ -2,11 +2,6 @@
   <a href="https://github.com/thespation/debian-i3wm/blob/main/README.md">🇧🇷 Switch to Portuguese</a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0219a0af-9254-4921-9481-d8916a53d647" alt="Debian i3wm Desktop" />
-  <br>
-  <sub>Theme Selector</sub>
-</p>
 
 
 <p align="center">
