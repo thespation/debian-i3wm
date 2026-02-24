@@ -47,7 +47,6 @@ wireplumber
 xclip
 xdotool
 xorg
-xclip
 xfce4-power-manager
 xfce4-settings
 zip
