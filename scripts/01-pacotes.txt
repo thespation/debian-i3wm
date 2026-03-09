@@ -1,0 +1,82 @@
+# ==========================================
+# Base / utilitários gerais
+# ==========================================
+curl
+wget
+zip
+nala
+nano
+git
+htop
+inxi
+bat
+eza
+psmisc
+
+# ==========================================
+# Sessão gráfica / Xorg / i3wm
+# ==========================================
+xorg
+i3
+python3-i3ipc
+autotiling
+rofi
+polybar
+picom
+feh
+maim
+xclip
+xdotool
+dunst
+gammastep
+cliphist
+
+# ==========================================
+# Áudio
+# ==========================================
+pipewire-audio
+pipewire-pulse
+wireplumber
+pavucontrol
+pamixer
+
+# ==========================================
+# Rede / Bluetooth
+# ==========================================
+network-manager
+network-manager-gnome
+bluez
+blueman
+
+# ==========================================
+# Login / permissões
+# ==========================================
+lightdm
+mate-polkit
+pkexec
+
+# ==========================================
+# Interface / tema / GTK
+# ==========================================
+gsettings-desktop-schemas
+gtk2-engines-murrine
+libglib2.0-bin
+
+# ==========================================
+# Gerenciador de arquivos e relacionados
+# ==========================================
+thunar
+thunar-archive-plugin
+xfce4-settings
+xfce4-power-manager
+
+# ==========================================
+# Apps e ferramentas de usuário
+# ==========================================
+alacritty
+geany
+meld
+catfish
+baobab
+imagemagick
+viewnior
